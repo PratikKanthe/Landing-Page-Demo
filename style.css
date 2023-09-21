@@ -264,3 +264,21 @@ nav h1{
         opacity: 0;
     }
 }
+
+
+.media-scroller {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+   }
+   
+   .media-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start; /* Adjust the height as needed */
+   }
+   
+   .media-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
